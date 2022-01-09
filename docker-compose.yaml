@@ -15,4 +15,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-
+    volumes:
+      - /srv/docker-config/telenot/config/config.js:/usr/src/app/config/config.js:ro
+      - /srv/docker-config/telenot/main:/usr/src/app/main
